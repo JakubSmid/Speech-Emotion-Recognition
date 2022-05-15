@@ -67,10 +67,8 @@ while True:
     recording = stream.read(int(fs*duration))[0]
     if select == "1" or select == "2":
         feature = ef1(recording.flatten(), fs)
-        feature = feature[np.newaxis, ..., np.newaxis]
     else:
         feature = ef2(recording.flatten(), fs)
-        feature = feature[np.newaxis, ..., np.newaxis]
-    
+    feature = feature[np.newaxis, ..., np.newaxis]
     prediction = model.predict(feature)
     print(emotions_cs[prediction.argmax()])
