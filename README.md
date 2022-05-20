@@ -10,6 +10,9 @@ Dále Nvidia uvádí [tabulku kompatibilních ovladačů grafických karet s dan
 
 Pro trénování projektu jsem použil grafickou kartu Nvidia GeForce MX130. Nejprve jsem aktivoval ovladač nvidia-driver-470. Následně jsem stáhnul a nainstaloval CUDA 11.2 a poté cuDNN 8.1 (pro stažení je nutné vytvořit Nvidia Developer účet).
 
+## Projekt odevzdaný jako příloha práce
+Přílohy bakalářské práce jsou omezené velikostním limitem 50 MB. Z tohoto důvodu se odevzdaná příloha mírně liší od [projektu dostupného na GitHubu](https://github.com/JakubSmid/Speech-Emotion-Recognition). Odevzdaná příloha neobsahuje jednotlivé nahrávky ve složce *datasets*. Proto je pro trénování nutné buď stáhnout zmíněný repozitář. Nebo vyhledat nahrávky všech tří datasetů zvlášť, uložit je a překonvertovat pomocí shellových skriptů ve složce *datasets*. Jakmile jsou nachystané podvzorkované wav soubory v patřičných složkách, lze pokračovat podle zbytku tohoto readme.
+
 ## Trénování, validace a testování sítě
 Jelikož v projektu nejsou obsaženy vygenerované příznaky, které jsou nezbytné pro trénování sítě (kvůli jejich množství a velikosti), je nutné tyto příznaky nejprve vygenerovat spuštěním *features_generator.py*, případně pomocí *test_features_generator.py*, *test_features_generator_valid.py* a *test_features_generator_noise.py*.
 Teprve po vygenerování souborů je možné zahájit trénování sítě spuštěním *train.py*. Případně testování spuštěním *test_train.py*.

@@ -32,7 +32,7 @@ a1.set_xlabel("Čas [s]")
 a1.set_ylabel("Koeficienty")
 
 # ulozeni obrazku
-fig.suptitle("Nahrávka naštvání (RAVDESS)", fontsize=16)
+fig.suptitle("Nahrávka hněvu (RAVDESS)", fontsize=16)
 fig.colorbar(img, ax=a1, location="bottom", shrink=0.5)
 fig.tight_layout()
 fig.savefig("images/" + title + ".pdf", dpi=300)

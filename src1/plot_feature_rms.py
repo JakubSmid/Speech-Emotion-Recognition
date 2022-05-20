@@ -30,7 +30,7 @@ a1.set_xlim(0, data.size/sr)
 a1.set_ylabel("RMS")
 
 # ulozeni obrazku
-fig.suptitle("Nahrávka naštvání (RAVDESS)", fontsize=16)
+fig.suptitle("Nahrávka hněvu (RAVDESS)", fontsize=16)
 fig.tight_layout()
 fig.savefig("images/" + title + ".pdf", dpi=300)
 fig.show()
